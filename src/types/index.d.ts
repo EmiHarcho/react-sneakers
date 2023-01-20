@@ -1,0 +1,5 @@
+declare module '*.png'
+declare module '*.module.scss'
+declare module '*.debounce'
+declare module '*.jpg'
+declare module '*.tsx'

@@ -1,0 +1,28 @@
+.empty{
+    width: 290px;
+    height: 278px;
+    margin: 20% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+    img{
+        width: 70px;
+    }
+    h1{
+        font-size: 24px;
+        margin-top: 24px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0.4;
+        margin-top: 10px;
+    }
+    button{
+        margin-top: 60px;
+        width: 100%;
+    }
+}

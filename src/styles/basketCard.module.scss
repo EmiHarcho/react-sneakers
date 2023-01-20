@@ -1,0 +1,39 @@
+.basket_item{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: rgba(0, 0, 0, 0.5) solid 1px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+
+    img{
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+    div{
+      margin: 0 px;
+
+      p{
+        font-weight: 400;
+        font-size: 14px;
+       }
+       span{
+        font-weight: 700;
+        font-size: 14px;
+       }
+    }
+    span{
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+
+      img{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+      }
+    }
+  }

@@ -1,0 +1,136 @@
+header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: rgba(124, 124, 124, 0.3) 2px solid;
+    padding: 45px 60px;
+
+    .header_left{
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+
+      img{
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+      }
+      .header_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h3{
+          font-size: 20px;
+          text-transform: uppercase;
+        }
+        p{
+          font-size: 14px;
+          opacity: 0.5;
+        }
+      }
+    }
+    //BURGER
+    .burger{
+      width: 40px;
+      height: 30px;
+      position: relative;
+      display: none;
+    }
+    .burger::after,.burger::before, .burger > span{
+      content: '';
+      width: 100%;
+      height: 5px;
+      background-color: rgba(0, 0, 0, 1);
+      position: absolute;
+      transition: all .4s;
+    }
+    .burger::after{
+      top: 0;
+    }
+    .burger::before{
+      bottom: 0;
+    }
+    .burger > span{
+      top: 40%;
+    }
+    .burger.active::after{
+      top: 40%;
+      transform: rotate(-45deg);
+    }
+    .burger.active::before{
+      top: 40%;
+      transform: rotate(45deg);
+    }
+    .burger.active > span{
+      opacity: 0;
+    }
+    // FOLDED_LIST
+    .folded_list{
+      display: none;
+      position: absolute;
+      top: 90px;
+      right: 40px;
+      box-sizing: border-box;
+      background-color: white;
+      border: rgba(0, 0, 0, 0.3) solid 1px;
+      border-radius: 10px;
+      z-index: 2;
+      &_item{
+        a{
+          text-decoration: none;
+          color: black;
+          padding: 30px 30px;
+          line-height: 100px;
+        }
+      }
+    }
+    // HEADER_RIGTH
+    .header_right{
+      display: flex;
+      width: 196px;
+      height: 20px;
+      justify-content: space-between;
+
+      li{
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+
+        img{
+          margin-right: 10px;
+        }
+        span{
+          color :#5C5C5C;
+          font-weight: 600;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+      li:last-child{
+        margin: 0;
+      }
+    }
+  }
+  @media(max-width : 700px){
+    header{
+      .burger{
+        display: block;
+      }
+      .folded_list{
+        display: block;
+      }
+      .header_left{
+        h3{
+          max-width: 110px;
+        }
+        p{
+          display: none;
+        }
+      }
+      .header_right{
+        display: none;
+      }
+    }
+  }

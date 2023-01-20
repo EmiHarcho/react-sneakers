@@ -1,0 +1,36 @@
+.bigButton{
+  margin: 30px auto 0 auto;
+  width: 80%;
+  display: flex;
+  background: #9DD558;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: all .2s;
+
+  a{
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 15px;
+  }
+}
+.bigButton::after{
+  content: '';
+  width: 14px;
+  height: 12px;
+  background: url('../assets/arrow_button.png') center;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  left: 85%;
+}
+.bigButton:hover{
+  background: #96c75a;
+}
